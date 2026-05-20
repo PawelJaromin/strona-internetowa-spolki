@@ -1,6 +1,6 @@
-# Strona internetowa spolki
+# OJ Automation
 
-Prosty startowy projekt statycznej strony internetowej spolki.
+Prosty startowy projekt statycznej strony internetowej OJ Automation.
 
 ## Pliki
 
