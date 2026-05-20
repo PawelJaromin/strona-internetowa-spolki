@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="128" viewBox="0 0 520 128" role="img" aria-labelledby="title desc">
+  <title id="title">ezero systems</title>
+  <desc id="desc">Logo ezero z dopiskiem systems.</desc>
+  <rect width="520" height="128" fill="none"/>
+  <g>
+    <rect x="28" y="24" width="88" height="80" rx="8" fill="#123e33"/>
+    <path d="M46 50h44M46 64h32M46 78h48" stroke="#ffffff" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="101" cy="50" r="5" fill="#d39d32"/>
+    <circle cx="88" cy="64" r="5" fill="#d39d32"/>
+    <circle cx="106" cy="78" r="5" fill="#d39d32"/>
+  </g>
+  <text x="150" y="73" fill="#14201b" font-family="Inter, Arial, Helvetica, sans-serif" font-size="58" font-weight="850" letter-spacing="0">ezero</text>
+  <text x="154" y="102" fill="#65716b" font-family="Inter, Arial, Helvetica, sans-serif" font-size="20" font-weight="800" letter-spacing="3">SYSTEMS</text>
+</svg>

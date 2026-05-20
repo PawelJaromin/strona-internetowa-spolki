@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="128" viewBox="0 0 520 128" role="img" aria-labelledby="title desc">
+  <title id="title">ezero control</title>
+  <desc id="desc">Logo ezero z dopiskiem control.</desc>
+  <rect width="520" height="128" fill="none"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="74" cy="64" r="42" stroke="#1f6f5b" stroke-width="8"/>
+    <path d="M52 65h44M75 42v44" stroke="#123e33" stroke-width="8"/>
+    <circle cx="74" cy="64" r="11" fill="#d39d32" stroke="none"/>
+    <path d="M107 31l15-15M107 97l15 15" stroke="#d39d32" stroke-width="7"/>
+  </g>
+  <text x="150" y="73" fill="#14201b" font-family="Inter, Arial, Helvetica, sans-serif" font-size="58" font-weight="850" letter-spacing="0">ezero</text>
+  <text x="154" y="102" fill="#65716b" font-family="Inter, Arial, Helvetica, sans-serif" font-size="20" font-weight="800" letter-spacing="3">CONTROL</text>
+</svg>
