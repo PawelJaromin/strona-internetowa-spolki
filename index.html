@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Strona internetowa spolki</title>
+    <meta
+      name="description"
+      content="Nowoczesna strona internetowa spolki z oferta, informacjami i formularzem kontaktowym."
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Strona glowna">
+        <span class="brand-mark" aria-hidden="true">S</span>
+        <span>Spolka</span>
+      </a>
+      <nav class="site-nav" aria-label="Glowne">
+        <a href="#oferta">Oferta</a>
+        <a href="#o-nas">O nas</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-content">
+          <p class="eyebrow">Nowa strona firmowa</p>
+          <h1>Profesjonalna obecnosci online dla Twojej spolki.</h1>
+          <p class="hero-copy">
+            Przejrzysta prezentacja oferty, zaufania i kontaktu w jednym szybkim,
+            responsywnym serwisie.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#kontakt">Skontaktuj sie</a>
+            <a class="button secondary" href="#oferta">Zobacz oferte</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="oferta">
+        <div class="section-heading">
+          <p class="eyebrow">Oferta</p>
+          <h2>Zakres wspolpracy</h2>
+        </div>
+        <div class="service-grid">
+          <article class="service-card">
+            <h3>Doradztwo</h3>
+            <p>Wsparcie w planowaniu, optymalizacji i rozwoju procesow biznesowych.</p>
+          </article>
+          <article class="service-card">
+            <h3>Realizacja</h3>
+            <p>Sprawna koordynacja projektow od pierwszej koncepcji po wdrozenie.</p>
+          </article>
+          <article class="service-card">
+            <h3>Partnerstwo</h3>
+            <p>Dlugofalowa wspolpraca oparta na przejrzystej komunikacji i wynikach.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split" id="o-nas">
+        <div>
+          <p class="eyebrow">O nas</p>
+          <h2>Stawiamy na konkret, terminowosc i prosta komunikacje.</h2>
+        </div>
+        <p>
+          Ten startowy szablon mozna szybko rozbudowac o realne tresci, zdjecia,
+          dane kontaktowe, formularz i integracje potrzebne w docelowym serwisie.
+        </p>
+      </section>
+
+      <section class="section contact" id="kontakt">
+        <div class="section-heading">
+          <p class="eyebrow">Kontakt</p>
+          <h2>Porozmawiajmy o stronie.</h2>
+        </div>
+        <form class="contact-form">
+          <label>
+            Imie i nazwisko
+            <input type="text" name="name" autocomplete="name">
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" autocomplete="email">
+          </label>
+          <label>
+            Wiadomosc
+            <textarea name="message" rows="4"></textarea>
+          </label>
+          <button class="button primary" type="submit">Wyslij</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>&copy; 2026 Spolka. Wszelkie prawa zastrzezone.</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
