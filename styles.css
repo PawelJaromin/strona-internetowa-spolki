@@ -1,4 +1,4 @@
-﻿:root {
+:root {
   --bg: #f3f0eb;
   --surface: #fffaf4;
   --surface-strong: #f8efe3;
@@ -75,6 +75,43 @@ a {
   height: auto;
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.language-switcher {
+  display: inline-flex;
+  padding: 3px;
+  border: 1px solid rgba(21, 18, 15, 0.18);
+  border-radius: var(--radius);
+  background: rgba(255, 250, 244, 0.72);
+}
+
+.language-switcher button {
+  min-width: 38px;
+  height: 34px;
+  padding: 0 8px;
+  border: 0;
+  border-radius: 4px;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.language-switcher button:hover {
+  color: var(--accent-strong);
+}
+
+.language-switcher button[aria-pressed="true"] {
+  background: var(--dark);
+  color: white;
+}
 .menu-toggle {
   display: none;
   align-items: center;
@@ -673,8 +710,14 @@ textarea:focus {
     display: inline-flex;
   }
 
+  .header-actions {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
   .site-nav {
     grid-column: 1 / -1;
+    grid-row: 2;
     display: grid;
     grid-template-columns: 1fr;
     width: 100%;
@@ -700,6 +743,16 @@ textarea:focus {
 }
 
 @media (max-width: 760px) {
+  .language-switcher {
+    padding: 2px;
+  }
+
+  .language-switcher button {
+    min-width: 34px;
+    height: 32px;
+    padding-inline: 6px;
+  }
+
   .contact,
   .split,
   .company,

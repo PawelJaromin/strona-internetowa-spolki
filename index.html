@@ -1,265 +1,121 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="pl">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Automatyka, integracje i programowanie | STERVECTA automation</title>
-    <meta
-      name="description"
-      content="Automatyka przemyslowa, integracje systemow, aplikacje webowe i automatyzacja procesow dla firm."
-    >
-    <link rel="stylesheet" href="styles.css?v=20260614-2">
+    <title>Automatyka, integracje i programowanie | STERVECTA</title>
+    <meta name="description" content="Automatyka przemysłowa, integracje systemów, aplikacje webowe i automatyzacja procesów dla firm.">
+    <link rel="stylesheet" href="styles.css?v=20260614-3">
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="Strona glowna">
+      <a class="brand" href="#top" aria-label="Strona główna" data-i18n-aria-label="brand.home">
         <img class="brand-logo" src="assets/logo-stervecta.png?v=20260614-1" alt="STERVECTA">
       </a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Otworz menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <nav class="site-nav" id="site-nav" aria-label="Glowne">
-        <a href="#uslugi">Uslugi</a>
-        <a href="#realizacje">Realizacje</a>
-        <a href="#technologie">Technologie</a>
-        <a href="#firma">Firma</a>
-        <a href="#kontakt">Kontakt</a>
+      <nav class="site-nav" id="site-nav" aria-label="Główne" data-i18n-aria-label="nav.label">
+        <a href="#uslugi" data-i18n="nav.services">Usługi</a>
+        <a href="#realizacje" data-i18n="nav.projects">Realizacje</a>
+        <a href="#technologie" data-i18n="nav.technologies">Technologie</a>
+        <a href="#firma" data-i18n="nav.company">Firma</a>
+        <a href="#kontakt" data-i18n="nav.contact">Kontakt</a>
       </nav>
+      <div class="header-actions">
+        <div class="language-switcher" role="group" aria-label="Wybór języka" data-i18n-aria-label="language.label">
+          <button type="button" data-language="pl" aria-pressed="true">PL</button>
+          <button type="button" data-language="en" aria-pressed="false">EN</button>
+          <button type="button" data-language="de" aria-pressed="false">DE</button>
+        </div>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Otwórz menu" data-i18n-aria-label="menu.open">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </header>
 
     <main id="top">
       <section class="hero">
         <div class="hero-content">
-          <p class="eyebrow">Automatyka, integracje, programowanie</p>
-          <h1>Usprawniamy procesy, laczac maszyny, systemy i dane.</h1>
-          <p class="hero-copy">
-            Projektujemy i wdrazamy rozwiazania dla produkcji, logistyki i firm,
-            ktore chca mniej recznej pracy, lepszy przeplyw informacji i pewne
-            narzedzia do codziennego dzialania.
-          </p>
+          <p class="eyebrow" data-i18n="hero.eyebrow">Automatyka, integracje, programowanie</p>
+          <h1 data-i18n="hero.title">Usprawniamy procesy, łącząc maszyny, systemy i dane.</h1>
+          <p class="hero-copy" data-i18n="hero.copy">Projektujemy i wdrażamy rozwiązania dla produkcji, logistyki i firm, które chcą mniej ręcznej pracy, lepszy przepływ informacji i pewne narzędzia do codziennego działania.</p>
           <div class="hero-actions">
-            <a class="button primary" href="#kontakt">Opisz problem</a>
-            <a class="button secondary" href="#uslugi">Zobacz zakres prac</a>
+            <a class="button primary" href="#kontakt" data-i18n="hero.ctaPrimary">Opisz problem</a>
+            <a class="button secondary" href="#uslugi" data-i18n="hero.ctaSecondary">Zobacz zakres prac</a>
           </div>
         </div>
-        <aside class="hero-panel" aria-label="Obszary specjalizacji">
-          <div>
-            <span class="metric">PLC / HMI / SCADA</span>
-            <p>Sterowanie, wizualizacja i modernizacje ukladow automatyki.</p>
-          </div>
-          <div>
-            <span class="metric">ERP / MES / WMS / API</span>
-            <p>Integracje danych miedzy systemami i stanowiskami pracy.</p>
-          </div>
-          <div>
-            <span class="metric">Web / SQL / Raporty</span>
-            <p>Aplikacje, dashboardy i automatyczne raportowanie.</p>
-          </div>
+        <aside class="hero-panel" aria-label="Obszary specjalizacji" data-i18n-aria-label="hero.panelLabel">
+          <div><span class="metric">PLC / HMI / SCADA</span><p data-i18n="hero.panel1">Sterowanie, wizualizacja i modernizacje układów automatyki.</p></div>
+          <div><span class="metric">ERP / MES / WMS / API</span><p data-i18n="hero.panel2">Integracje danych między systemami i stanowiskami pracy.</p></div>
+          <div><span class="metric" data-i18n="hero.panel3Title">Web / SQL / Raporty</span><p data-i18n="hero.panel3">Aplikacje, dashboardy i automatyczne raportowanie.</p></div>
         </aside>
       </section>
 
       <section class="section intro">
-        <p class="lead">
-          Dobra automatyzacja nie zaczyna sie od technologii, tylko od procesu.
-          Pomagamy opisac problem, dobrac sensowna architekture i wdrozyc
-          rozwiazanie, ktore da sie utrzymac po uruchomieniu.
-        </p>
+        <p class="lead" data-i18n="intro.lead">Dobra automatyzacja nie zaczyna się od technologii, tylko od procesu. Pomagamy opisać problem, dobrać sensowną architekturę i wdrożyć rozwiązanie, które da się utrzymać po uruchomieniu.</p>
       </section>
 
       <section class="section" id="uslugi">
         <div class="section-heading">
-          <p class="eyebrow">Uslugi</p>
-          <h2>Zakres wspolpracy</h2>
-          <p>
-            Pracujemy na styku automatyki przemyslowej, systemow biznesowych i
-            oprogramowania tworzonego pod konkretne procesy.
-          </p>
+          <p class="eyebrow" data-i18n="services.eyebrow">Usługi</p>
+          <h2 data-i18n="services.title">Zakres współpracy</h2>
+          <p data-i18n="services.copy">Pracujemy na styku automatyki przemysłowej, systemów biznesowych i oprogramowania tworzonego pod konkretne procesy.</p>
         </div>
         <div class="service-grid">
-          <article class="service-card">
-            <span class="card-kicker">01</span>
-            <h3>Automatyka przemyslowa</h3>
-            <p>PLC, HMI, SCADA, diagnostyka maszyn, modernizacje sterowania i uruchomienia.</p>
-          </article>
-          <article class="service-card">
-            <span class="card-kicker">02</span>
-            <h3>Integracje systemow</h3>
-            <p>ERP, MES, WMS, CRM, REST API, OPC UA, MQTT i wymiana danych miedzy aplikacjami.</p>
-          </article>
-          <article class="service-card">
-            <span class="card-kicker">03</span>
-            <h3>Aplikacje webowe</h3>
-            <p>Panele operatora, systemy wewnetrzne, formularze, workflow i narzedzia dla zespolow.</p>
-          </article>
-          <article class="service-card">
-            <span class="card-kicker">04</span>
-            <h3>Dane i raportowanie</h3>
-            <p>Bazy danych, dashboardy KPI, automatyczne raporty, eksporty i alarmy procesowe.</p>
-          </article>
-          <article class="service-card">
-            <span class="card-kicker">05</span>
-            <h3>Automatyzacja biura</h3>
-            <p>Eliminacja recznego przepisywania danych, importy, integracje arkuszy i dokumentow.</p>
-          </article>
-          <article class="service-card">
-            <span class="card-kicker">06</span>
-            <h3>Utrzymanie i rozwoj</h3>
-            <p>Wsparcie po wdrozeniu, dokumentacja, monitoring i rozbudowa istniejacych rozwiazan.</p>
-          </article>
+          <article class="service-card"><span class="card-kicker">01</span><h3 data-i18n="services.s1Title">Automatyka przemysłowa</h3><p data-i18n="services.s1Copy">PLC, HMI, SCADA, diagnostyka maszyn, modernizacje sterowania i uruchomienia.</p></article>
+          <article class="service-card"><span class="card-kicker">02</span><h3 data-i18n="services.s2Title">Integracje systemów</h3><p data-i18n="services.s2Copy">ERP, MES, WMS, CRM, REST API, OPC UA, MQTT i wymiana danych między aplikacjami.</p></article>
+          <article class="service-card"><span class="card-kicker">03</span><h3 data-i18n="services.s3Title">Aplikacje webowe</h3><p data-i18n="services.s3Copy">Panele operatora, systemy wewnętrzne, formularze, workflow i narzędzia dla zespołów.</p></article>
+          <article class="service-card"><span class="card-kicker">04</span><h3 data-i18n="services.s4Title">Dane i raportowanie</h3><p data-i18n="services.s4Copy">Bazy danych, dashboardy KPI, automatyczne raporty, eksporty i alarmy procesowe.</p></article>
+          <article class="service-card"><span class="card-kicker">05</span><h3 data-i18n="services.s5Title">Automatyzacja biura</h3><p data-i18n="services.s5Copy">Eliminacja ręcznego przepisywania danych, importy, integracje arkuszy i dokumentów.</p></article>
+          <article class="service-card"><span class="card-kicker">06</span><h3 data-i18n="services.s6Title">Utrzymanie i rozwój</h3><p data-i18n="services.s6Copy">Wsparcie po wdrożeniu, dokumentacja, monitoring i rozbudowa istniejących rozwiązań.</p></article>
         </div>
       </section>
 
       <section class="section process">
-        <div class="section-heading">
-          <p class="eyebrow">Jak pracujemy</p>
-          <h2>Od opisu problemu do stabilnego wdrozenia.</h2>
-        </div>
+        <div class="section-heading"><p class="eyebrow" data-i18n="process.eyebrow">Jak pracujemy</p><h2 data-i18n="process.title">Od opisu problemu do stabilnego wdrożenia.</h2></div>
         <ol class="process-list">
-          <li>
-            <span>Analiza</span>
-            <p>Mapujemy proces, zrodla danych, ograniczenia techniczne i oczekiwany efekt.</p>
-          </li>
-          <li>
-            <span>Koncepcja</span>
-            <p>Dobieramy architekture, zakres pierwszego etapu i sposob testowania.</p>
-          </li>
-          <li>
-            <span>Wdrozenie</span>
-            <p>Budujemy rozwiazanie, integrujemy systemy i dokumentujemy kluczowe decyzje.</p>
-          </li>
-          <li>
-            <span>Rozwoj</span>
-            <p>Po uruchomieniu dopracowujemy funkcje, raporty, alerty i kolejne integracje.</p>
-          </li>
+          <li><span data-i18n="process.p1Title">Analiza</span><p data-i18n="process.p1Copy">Mapujemy proces, źródła danych, ograniczenia techniczne i oczekiwany efekt.</p></li>
+          <li><span data-i18n="process.p2Title">Koncepcja</span><p data-i18n="process.p2Copy">Dobieramy architekturę, zakres pierwszego etapu i sposób testowania.</p></li>
+          <li><span data-i18n="process.p3Title">Wdrożenie</span><p data-i18n="process.p3Copy">Budujemy rozwiązanie, integrujemy systemy i dokumentujemy kluczowe decyzje.</p></li>
+          <li><span data-i18n="process.p4Title">Rozwój</span><p data-i18n="process.p4Copy">Po uruchomieniu dopracowujemy funkcje, raporty, alerty i kolejne integracje.</p></li>
         </ol>
       </section>
 
       <section class="section" id="realizacje">
-        <div class="section-heading">
-          <p class="eyebrow">Realizacje</p>
-          <h2>Typowe projekty, ktore dowoza mierzalny efekt.</h2>
-        </div>
+        <div class="section-heading"><p class="eyebrow" data-i18n="projects.eyebrow">Realizacje</p><h2 data-i18n="projects.title">Typowe projekty, które przynoszą mierzalny efekt.</h2></div>
         <div class="case-grid">
-          <article class="case-card">
-            <h3>Integracja produkcji z ERP</h3>
-            <p>Automatyczne przekazywanie zlecen, statusow i zuzycia materialow bez recznego przepisywania.</p>
-            <strong>Efekt: krotszy obieg informacji i mniej bledow w danych.</strong>
-          </article>
-          <article class="case-card">
-            <h3>Dashboard utrzymania ruchu</h3>
-            <p>Zbieranie sygnalow z maszyn, historia zdarzen, alarmy i widok KPI dla zespolu technicznego.</p>
-            <strong>Efekt: szybsza diagnostyka i lepsza widocznosc przestojow.</strong>
-          </article>
-          <article class="case-card">
-            <h3>Aplikacja do obslugi zlecen</h3>
-            <p>Dedykowany system webowy dla procesu, ktorego nie obsluguje standardowy program firmowy.</p>
-            <strong>Efekt: jeden uporzadkowany proces zamiast arkuszy i maili.</strong>
-          </article>
+          <article class="case-card"><h3 data-i18n="projects.c1Title">Integracja produkcji z ERP</h3><p data-i18n="projects.c1Copy">Automatyczne przekazywanie zleceń, statusów i zużycia materiałów bez ręcznego przepisywania.</p><strong data-i18n="projects.c1Effect">Efekt: krótszy obieg informacji i mniej błędów w danych.</strong></article>
+          <article class="case-card"><h3 data-i18n="projects.c2Title">Dashboard utrzymania ruchu</h3><p data-i18n="projects.c2Copy">Zbieranie sygnałów z maszyn, historia zdarzeń, alarmy i widok KPI dla zespołu technicznego.</p><strong data-i18n="projects.c2Effect">Efekt: szybsza diagnostyka i lepsza widoczność przestojów.</strong></article>
+          <article class="case-card"><h3 data-i18n="projects.c3Title">Aplikacja do obsługi zleceń</h3><p data-i18n="projects.c3Copy">Dedykowany system webowy dla procesu, którego nie obsługuje standardowy program firmowy.</p><strong data-i18n="projects.c3Effect">Efekt: jeden uporządkowany proces zamiast arkuszy i maili.</strong></article>
         </div>
       </section>
 
       <section class="section split" id="technologie">
-        <div>
-          <p class="eyebrow">Technologie</p>
-          <h2>Dobieramy narzedzia do procesu, infrastruktury i budzetu.</h2>
-        </div>
-        <div class="tag-cloud" aria-label="Technologie">
-          <span>PLC</span>
-          <span>HMI</span>
-          <span>SCADA</span>
-          <span>OPC UA</span>
-          <span>MQTT</span>
-          <span>REST API</span>
-          <span>Python</span>
-          <span>JavaScript</span>
-          <span>TypeScript</span>
-          <span>SQL</span>
-          <span>PostgreSQL</span>
-          <span>MS SQL</span>
-          <span>Docker</span>
-          <span>Linux</span>
-          <span>Windows Server</span>
-        </div>
+        <div><p class="eyebrow" data-i18n="tech.eyebrow">Technologie</p><h2 data-i18n="tech.title">Dobieramy narzędzia do procesu, infrastruktury i budżetu.</h2></div>
+        <div class="tag-cloud" aria-label="Technologie" data-i18n-aria-label="tech.label"><span>PLC</span><span>HMI</span><span>SCADA</span><span>OPC UA</span><span>MQTT</span><span>REST API</span><span>Python</span><span>JavaScript</span><span>TypeScript</span><span>SQL</span><span>PostgreSQL</span><span>MS SQL</span><span>Docker</span><span>Linux</span><span>Windows Server</span></div>
       </section>
 
       <section class="section company" id="firma">
-        <div class="company-copy">
-          <p class="eyebrow">O firmie</p>
-          <h2>Techniczny partner dla firm, ktore chca laczyc swiat produkcji i IT.</h2>
-          <p>
-            Wspieramy zespoly produkcji, utrzymania ruchu, logistyki i administracji
-            w projektach, ktore wymagaja praktycznego podejscia: od sterowania i
-            danych z maszyn po aplikacje oraz integracje z systemami firmowymi.
-          </p>
-        </div>
+        <div class="company-copy"><p class="eyebrow" data-i18n="company.eyebrow">O firmie</p><h2 data-i18n="company.title">Techniczny partner dla firm, które chcą łączyć świat produkcji i IT.</h2><p data-i18n="company.copy">Wspieramy zespoły produkcji, utrzymania ruchu, logistyki i administracji w projektach, które wymagają praktycznego podejścia: od sterowania i danych z maszyn po aplikacje oraz integracje z systemami firmowymi.</p></div>
         <dl class="company-facts">
-          <div>
-            <dt>Forma</dt>
-            <dd>STERVECTA sp. z o.o.</dd>
-          </div>
-          <div>
-            <dt>Dane rejestrowe</dt>
-            <dd>NIP, REGON i KRS do uzupelnienia po stronie firmy</dd>
-          </div>
-          <div>
-            <dt>Model pracy</dt>
-            <dd>Analiza, etapowanie, wdrozenie, dokumentacja i wsparcie</dd>
-          </div>
+          <div><dt data-i18n="company.formLabel">Forma</dt><dd>STERVECTA sp. z o.o.</dd></div>
+          <div><dt data-i18n="company.registryLabel">Dane rejestrowe</dt><dd data-i18n="company.registryValue">NIP, REGON i KRS do uzupełnienia po stronie firmy</dd></div>
+          <div><dt data-i18n="company.modelLabel">Model pracy</dt><dd data-i18n="company.modelValue">Analiza, etapowanie, wdrożenie, dokumentacja i wsparcie</dd></div>
         </dl>
       </section>
 
       <section class="section contact" id="kontakt">
-        <div class="section-heading">
-          <p class="eyebrow">Kontakt</p>
-          <h2>Nie musisz miec gotowej specyfikacji.</h2>
-          <p>
-            Wystarczy opis procesu, ktory chcesz usprawnic: co dziala dzisiaj,
-            gdzie powstaja bledy i jaki efekt bylby najcenniejszy.
-          </p>
-          <div class="contact-lines">
-            <a href="mailto:kontakt@example.com">kontakt@example.com</a>
-            <a href="tel:+48123456789">+48 123 456 789</a>
-          </div>
-        </div>
+        <div class="section-heading"><p class="eyebrow" data-i18n="contact.eyebrow">Kontakt</p><h2 data-i18n="contact.title">Nie musisz mieć gotowej specyfikacji.</h2><p data-i18n="contact.copy">Wystarczy opis procesu, który chcesz usprawnić: co działa dzisiaj, gdzie powstają błędy i jaki efekt byłby najcenniejszy.</p><div class="contact-lines"><a href="mailto:kontakt@example.com">kontakt@example.com</a><a href="tel:+48123456789">+48 123 456 789</a></div></div>
         <form class="contact-form">
-          <label>
-            Imie i nazwisko
-            <input type="text" name="name" autocomplete="name">
-          </label>
-          <label>
-            Firma
-            <input type="text" name="company" autocomplete="organization">
-          </label>
-          <label>
-            Email
-            <input type="email" name="email" autocomplete="email">
-          </label>
-          <label>
-            Co chcesz usprawnic?
-            <textarea name="message" rows="5"></textarea>
-          </label>
-          <button class="button primary dark" type="submit">Wyslij zapytanie</button>
+          <label><span data-i18n="form.name">Imię i nazwisko</span><input type="text" name="name" autocomplete="name"></label>
+          <label><span data-i18n="form.company">Firma</span><input type="text" name="company" autocomplete="organization"></label>
+          <label><span data-i18n="form.email">E-mail</span><input type="email" name="email" autocomplete="email"></label>
+          <label><span data-i18n="form.message">Co chcesz usprawnić?</span><textarea name="message" rows="5"></textarea></label>
+          <button class="button primary dark" type="submit" data-i18n="form.submit">Wyślij zapytanie</button>
           <p class="form-status" role="status" aria-live="polite"></p>
         </form>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <span>&copy; 2026 STERVECTA sp. z o.o.</span>
-      <a href="#top">Do gory</a>
-    </footer>
-
-    <script src="script.js?v=20260523-3"></script>
+    <footer class="site-footer"><span>&copy; 2026 STERVECTA sp. z o.o.</span><a href="#top" data-i18n="footer.top">Do góry</a></footer>
+    <script src="script.js?v=20260614-3"></script>
   </body>
 </html>
-
-
-
-
-
-
-
-
-
