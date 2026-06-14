@@ -1,4 +1,5 @@
 :root {
+  --header-offset: 124px;
   --bg: #f3f0eb;
   --surface: #fffaf4;
   --surface-strong: #f8efe3;
@@ -22,11 +23,11 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 124px;
+  scroll-padding-top: var(--header-offset);
 }
 
 section[id] {
-  scroll-margin-top: 124px;
+  scroll-margin-top: var(--header-offset);
 }
 
 body {
@@ -737,14 +738,6 @@ textarea:focus {
   }
 }
 @media (max-width: 1120px) {
-  html {
-    scroll-padding-top: 104px;
-  }
-
-  section[id] {
-    scroll-margin-top: 104px;
-  }
-
   .site-header {
     display: grid;
     grid-template-columns: minmax(0, 1fr) auto;
