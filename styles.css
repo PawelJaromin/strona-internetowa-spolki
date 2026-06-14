@@ -731,7 +731,7 @@ textarea:focus {
   }
 
   .site-header.menu-open .site-nav {
-    max-height: 360px;
+    max-height: 480px;
     padding: 10px 0 2px;
     border-top: 1px solid rgba(21, 18, 15, 0.12);
     opacity: 1;
@@ -739,6 +739,19 @@ textarea:focus {
 
   .site-nav a {
     padding: 14px 12px;
+  }
+
+  .site-nav .language-switcher {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    margin-top: 8px;
+  }
+
+  .site-nav .language-switcher button {
+    width: 100%;
+    min-width: 0;
+    height: 40px;
   }
 }
 
@@ -784,51 +797,5 @@ textarea:focus {
 
   .site-footer {
     flex-direction: column;
-  }
-}
-@media (max-width: 620px) {
-  html {
-    scroll-padding-top: 154px;
-  }
-
-  section[id] {
-    scroll-margin-top: 154px;
-  }
-
-  .site-header {
-    grid-template-columns: minmax(0, 1fr) auto;
-    gap: 12px;
-    padding-block: 14px;
-  }
-
-  .brand-logo {
-    width: min(250px, calc(100vw - 112px));
-  }
-
-  .header-actions {
-    display: contents;
-  }
-
-  .menu-toggle {
-    grid-column: 2;
-    grid-row: 1;
-  }
-
-  .language-switcher {
-    grid-column: 1 / -1;
-    grid-row: 2;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 100%;
-  }
-
-  .language-switcher button {
-    width: 100%;
-    min-width: 0;
-    height: 36px;
-  }
-
-  .site-nav {
-    grid-row: 3;
   }
 }

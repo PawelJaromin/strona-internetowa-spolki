@@ -83,7 +83,12 @@ function applyLanguage(language, updateUrl = true) {
   }
 }
 
-document.querySelectorAll("[data-language]").forEach((button) => button.addEventListener("click", () => applyLanguage(button.dataset.language)));
+document.querySelectorAll("[data-language]").forEach((button) => button.addEventListener("click", () => {
+  applyLanguage(button.dataset.language);
+  header?.classList.remove("menu-open");
+  menuToggle?.setAttribute("aria-expanded", "false");
+  menuToggle?.setAttribute("aria-label", getTranslation(currentLanguage, "menu.open"));
+}));
 
 menuToggle?.addEventListener("click", () => {
   const isOpen = header?.classList.toggle("menu-open") ?? false;
