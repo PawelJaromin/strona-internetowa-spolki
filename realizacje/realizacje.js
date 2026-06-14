@@ -1,0 +1,79 @@
+const projectData = {
+  erp: {
+    pl: { meta: "Integracja produkcji z ERP | STERVECTA", eyebrow: "Przykładowa realizacja / Integracja", title: "Integracja linii produkcyjnej z systemem ERP", lead: "Przykładowy opis wdrożenia automatycznej wymiany zleceń, statusów produkcji i zużycia materiałów pomiędzy halą a systemem biznesowym.", sector: "Produkcja seryjna", scope: "PLC / API / ERP / SQL", duration: "Przykładowo: 12 tygodni", challenge: "Wyzwanie", challengeText: "Dane o realizacji zleceń były przepisywane ręcznie z raportów zmianowych. Powodowało to opóźnienia, rozbieżności w stanach materiałowych i brak bieżącej informacji dla planowania.", solution: "Rozwiązanie", solutionText: "Przygotowaliśmy warstwę integracyjną pobierającą zlecenia z ERP i przekazującą je do stanowisk produkcyjnych. Statusy, ilości oraz zużycia wracają automatycznie po przejściu kontroli poprawności.", elements: "Zakres przykładowy", items: ["mapowanie procesu i źródeł danych", "komunikacja ze sterownikami i bazą produkcyjną", "API wymiany danych z ERP", "kolejkowanie i ponawianie transmisji", "logi diagnostyczne oraz dokumentacja"], result: "Przykładowy efekt", resultText: "Aktualny status produkcji jest dostępny bez ręcznego raportowania, a błędy przepisywania danych zostały ograniczone.", imageNote: "Przykładowa grafika. W tym miejscu można wstawić zdjęcie właściwej instalacji.", back: "Wróć do realizacji" },
+    en: { meta: "Production and ERP integration | STERVECTA", eyebrow: "Sample case study / Integration", title: "Production line integration with an ERP system", lead: "A sample implementation of automatic order, production status and material consumption exchange between the shop floor and a business system.", sector: "Serial manufacturing", scope: "PLC / API / ERP / SQL", duration: "Example: 12 weeks", challenge: "Challenge", challengeText: "Production order data was copied manually from shift reports, causing delays, inventory discrepancies and limited visibility for planning.", solution: "Solution", solutionText: "We built an integration layer that receives orders from ERP and distributes them to production stations. Status, quantity and consumption data return automatically after validation.", elements: "Sample scope", items: ["process and data-source mapping", "PLC and production database communication", "ERP data exchange API", "message queuing and retry handling", "diagnostic logs and documentation"], result: "Sample result", resultText: "Current production status is available without manual reporting and data-entry errors are reduced.", imageNote: "Sample image. Replace it with a photograph of the actual installation.", back: "Back to projects" },
+    de: { meta: "Integration von Produktion und ERP | STERVECTA", eyebrow: "Beispielprojekt / Integration", title: "Integration einer Produktionslinie mit dem ERP-System", lead: "Beispiel für den automatischen Austausch von Aufträgen, Produktionsstatus und Materialverbrauch zwischen Fertigung und Geschäftssystem.", sector: "Serienproduktion", scope: "PLC / API / ERP / SQL", duration: "Beispiel: 12 Wochen", challenge: "Herausforderung", challengeText: "Auftragsdaten wurden manuell aus Schichtberichten übertragen. Dies führte zu Verzögerungen, Bestandsabweichungen und fehlender Transparenz für die Planung.", solution: "Lösung", solutionText: "Wir entwickelten eine Integrationsschicht, die Aufträge aus dem ERP empfängt und an Produktionsstationen verteilt. Status-, Mengen- und Verbrauchsdaten werden nach einer Prüfung automatisch zurückgesendet.", elements: "Beispielumfang", items: ["Analyse von Prozess und Datenquellen", "Kommunikation mit SPS und Produktionsdatenbank", "API für den ERP-Datenaustausch", "Warteschlangen und Wiederholungslogik", "Diagnoseprotokolle und Dokumentation"], result: "Beispielergebnis", resultText: "Der aktuelle Produktionsstatus ist ohne manuelle Berichte verfügbar und Eingabefehler werden reduziert.", imageNote: "Beispielgrafik. Hier kann später ein Foto der tatsächlichen Anlage eingesetzt werden.", back: "Zurück zu den Projekten" }
+  },
+  maintenance: {
+    pl: { meta: "Dashboard utrzymania ruchu | STERVECTA", eyebrow: "Przykładowa realizacja / Dane", title: "Dashboard diagnostyczny utrzymania ruchu", lead: "Przykładowy system zbierania sygnałów maszynowych, alarmów i przestojów z czytelnym widokiem KPI dla zespołu technicznego.", sector: "Utrzymanie ruchu", scope: "OPC UA / MQTT / SQL / Web", duration: "Przykładowo: 8 tygodni", challenge: "Wyzwanie", challengeText: "Informacje o awariach były rozproszone pomiędzy panelami operatorskimi, notatkami i arkuszami. Trudno było porównać linie oraz ustalić rzeczywiste przyczyny przestojów.", solution: "Rozwiązanie", solutionText: "Sygnały z maszyn trafiają do wspólnej bazy zdarzeń. Aplikacja prezentuje historię alarmów, czas pracy, przestoje i najważniejsze wskaźniki dla wybranego okresu.", elements: "Zakres przykładowy", items: ["pozyskanie sygnałów z maszyn", "ujednolicenie alarmów i kodów zdarzeń", "baza danych szeregów czasowych", "responsywny dashboard webowy", "raport zmianowy i eksport danych"], result: "Przykładowy efekt", resultText: "Technicy szybciej identyfikują źródło problemu, a kierownictwo otrzymuje porównywalne dane o dostępności maszyn.", imageNote: "Przykładowa grafika. Można ją zastąpić zrzutem właściwego dashboardu lub zdjęciem stanowiska.", back: "Wróć do realizacji" },
+    en: { meta: "Maintenance dashboard | STERVECTA", eyebrow: "Sample case study / Data", title: "Maintenance diagnostics dashboard", lead: "A sample system collecting machine signals, alarms and downtime with a clear KPI view for the technical team.", sector: "Maintenance", scope: "OPC UA / MQTT / SQL / Web", duration: "Example: 8 weeks", challenge: "Challenge", challengeText: "Failure information was scattered across operator panels, notes and spreadsheets, making line comparison and root-cause analysis difficult.", solution: "Solution", solutionText: "Machine signals are stored in a shared event database. The application presents alarm history, runtime, downtime and key indicators for a selected period.", elements: "Sample scope", items: ["machine signal acquisition", "alarm and event-code normalization", "time-series database", "responsive web dashboard", "shift report and data export"], result: "Sample result", resultText: "Technicians identify problems faster and management receives comparable machine-availability data.", imageNote: "Sample image. Replace it with an actual dashboard screenshot or workstation photograph.", back: "Back to projects" },
+    de: { meta: "Instandhaltungs-Dashboard | STERVECTA", eyebrow: "Beispielprojekt / Daten", title: "Diagnose-Dashboard für die Instandhaltung", lead: "Beispielsystem zur Erfassung von Maschinensignalen, Alarmen und Stillständen mit übersichtlichen KPI für das Technikteam.", sector: "Instandhaltung", scope: "OPC UA / MQTT / SQL / Web", duration: "Beispiel: 8 Wochen", challenge: "Herausforderung", challengeText: "Störungsinformationen waren auf Bedienpanels, Notizen und Tabellen verteilt. Linienvergleich und Ursachenanalyse waren dadurch schwierig.", solution: "Lösung", solutionText: "Maschinensignale werden in einer gemeinsamen Ereignisdatenbank gespeichert. Die Anwendung zeigt Alarmverlauf, Laufzeit, Stillstände und Kennzahlen für den gewählten Zeitraum.", elements: "Beispielumfang", items: ["Erfassung von Maschinensignalen", "Vereinheitlichung von Alarmen und Ereigniscodes", "Zeitreihendatenbank", "responsives Web-Dashboard", "Schichtbericht und Datenexport"], result: "Beispielergebnis", resultText: "Techniker erkennen Ursachen schneller und die Leitung erhält vergleichbare Daten zur Maschinenverfügbarkeit.", imageNote: "Beispielgrafik. Später durch einen echten Dashboard-Screenshot oder ein Arbeitsplatzfoto ersetzen.", back: "Zurück zu den Projekten" }
+  },
+  orders: {
+    pl: { meta: "Aplikacja do obsługi zleceń | STERVECTA", eyebrow: "Przykładowa realizacja / Aplikacja", title: "Aplikacja webowa do obsługi zleceń", lead: "Przykładowe narzędzie porządkujące niestandardowy proces realizacji zleceń, który wcześniej opierał się na arkuszach i wiadomościach e-mail.", sector: "Operacje i logistyka", scope: "Web / API / SQL / Workflow", duration: "Przykładowo: 10 tygodni", challenge: "Wyzwanie", challengeText: "Zespół korzystał z kilku wersji arkusza, a statusy były uzgadniane mailowo. Brakowało jednej historii zmian, kontroli kompletności i jasnego podziału odpowiedzialności.", solution: "Rozwiązanie", solutionText: "Powstała aplikacja z centralną listą zleceń, rolami użytkowników, etapami realizacji i automatycznymi powiadomieniami. System wymienia dane z istniejącymi narzędziami firmy przez API.", elements: "Zakres przykładowy", items: ["warsztaty i mapowanie workflow", "projekt interfejsu dla operatorów", "role, uprawnienia i historia zmian", "integracja API i import danych", "wdrożenie, szkolenie i dokumentacja"], result: "Przykładowy efekt", resultText: "Każde zlecenie ma aktualny status, właściciela i kompletną historię, a zespół pracuje w jednym spójnym narzędziu.", imageNote: "Przykładowa grafika. W tym miejscu można użyć docelowego zrzutu aplikacji.", back: "Wróć do realizacji" },
+    en: { meta: "Order management application | STERVECTA", eyebrow: "Sample case study / Application", title: "Web application for order management", lead: "A sample tool organizing a custom order workflow previously based on spreadsheets and e-mail messages.", sector: "Operations and logistics", scope: "Web / API / SQL / Workflow", duration: "Example: 10 weeks", challenge: "Challenge", challengeText: "The team used several spreadsheet versions and agreed statuses by e-mail. There was no single change history, completeness control or clear ownership.", solution: "Solution", solutionText: "We created an application with a central order list, user roles, workflow stages and automated notifications. It exchanges data with existing company tools through APIs.", elements: "Sample scope", items: ["workflow workshops and mapping", "operator interface design", "roles, permissions and change history", "API integration and data import", "deployment, training and documentation"], result: "Sample result", resultText: "Every order has a current status, owner and complete history, while the team works in one consistent tool.", imageNote: "Sample image. Replace it with a final screenshot of the application.", back: "Back to projects" },
+    de: { meta: "Anwendung zur Auftragsverwaltung | STERVECTA", eyebrow: "Beispielprojekt / Anwendung", title: "Webanwendung zur Auftragsverwaltung", lead: "Beispielwerkzeug zur Strukturierung eines individuellen Auftragsprozesses, der zuvor auf Tabellen und E-Mails basierte.", sector: "Betrieb und Logistik", scope: "Web / API / SQL / Workflow", duration: "Beispiel: 10 Wochen", challenge: "Herausforderung", challengeText: "Das Team arbeitete mit mehreren Tabellenversionen und stimmte Status per E-Mail ab. Eine zentrale Änderungshistorie, Vollständigkeitskontrolle und klare Verantwortung fehlten.", solution: "Lösung", solutionText: "Es entstand eine Anwendung mit zentraler Auftragsliste, Benutzerrollen, Prozessschritten und automatischen Benachrichtigungen. Der Datenaustausch mit bestehenden Werkzeugen erfolgt über APIs.", elements: "Beispielumfang", items: ["Workshops und Workflow-Analyse", "Oberflächendesign für Bediener", "Rollen, Berechtigungen und Änderungshistorie", "API-Integration und Datenimport", "Einführung, Schulung und Dokumentation"], result: "Beispielergebnis", resultText: "Jeder Auftrag besitzt einen aktuellen Status, einen Verantwortlichen und eine vollständige Historie. Das Team arbeitet in einem einheitlichen Werkzeug.", imageNote: "Beispielgrafik. Später durch einen finalen Screenshot der Anwendung ersetzen.", back: "Zurück zu den Projekten" }
+  }
+};
+
+const common = {
+  pl: { navServices: "Usługi", navProjects: "Realizacje", navTech: "Technologie", navCompany: "Firma", navContact: "Kontakt", language: "Wybór języka", menuOpen: "Otwórz menu", menuClose: "Zamknij menu", sectorLabel: "Branża", scopeLabel: "Technologie", durationLabel: "Czas realizacji", detailsTitle: "Opis przykładowego wdrożenia", galleryTitle: "Materiał zastępczy", footerTop: "Do góry" },
+  en: { navServices: "Services", navProjects: "Projects", navTech: "Technologies", navCompany: "Company", navContact: "Contact", language: "Language selection", menuOpen: "Open menu", menuClose: "Close menu", sectorLabel: "Sector", scopeLabel: "Technologies", durationLabel: "Delivery time", detailsTitle: "Sample implementation overview", galleryTitle: "Placeholder material", footerTop: "Back to top" },
+  de: { navServices: "Leistungen", navProjects: "Projekte", navTech: "Technologien", navCompany: "Unternehmen", navContact: "Kontakt", language: "Sprachauswahl", menuOpen: "Menü öffnen", menuClose: "Menü schließen", sectorLabel: "Branche", scopeLabel: "Technologien", durationLabel: "Projektdauer", detailsTitle: "Beschreibung des Beispielprojekts", galleryTitle: "Platzhaltermaterial", footerTop: "Nach oben" }
+};
+
+const page = document.body.dataset.project;
+const supported = ["pl", "en", "de"];
+const params = new URLSearchParams(location.search);
+const requested = params.get("lang");
+const saved = localStorage.getItem("stervecta-language");
+let language = supported.includes(requested) ? requested : supported.includes(saved) ? saved : "pl";
+const header = document.querySelector(".site-header");
+const toggle = document.querySelector(".menu-toggle");
+const nav = document.querySelector(".site-nav");
+
+function applyLanguage(next, updateUrl = true) {
+  language = supported.includes(next) ? next : "pl";
+  const data = projectData[page][language];
+  const labels = common[language];
+  document.documentElement.lang = language;
+  document.title = data.meta;
+  document.querySelectorAll("[data-project-text]").forEach((element) => {
+    const value = data[element.dataset.projectText];
+    if (typeof value === "string") element.textContent = value;
+  });
+  document.querySelectorAll("[data-common-text]").forEach((element) => {
+    const value = labels[element.dataset.commonText];
+    if (typeof value === "string") element.textContent = value;
+  });
+  const list = document.querySelector("[data-project-list]");
+  if (list) list.replaceChildren(...data.items.map((item) => Object.assign(document.createElement("li"), { textContent: item })));
+  document.querySelectorAll("[data-language]").forEach((button) => button.setAttribute("aria-pressed", String(button.dataset.language === language)));
+  document.querySelector(".language-switcher")?.setAttribute("aria-label", labels.language);
+  toggle?.setAttribute("aria-label", labels.menuOpen);
+  localStorage.setItem("stervecta-language", language);
+  if (updateUrl) {
+    const url = new URL(location.href);
+    url.searchParams.set("lang", language);
+    history.replaceState(null, "", url);
+  }
+}
+
+document.querySelectorAll("[data-language]").forEach((button) => button.addEventListener("click", () => {
+  applyLanguage(button.dataset.language);
+  header?.classList.remove("menu-open");
+  toggle?.setAttribute("aria-expanded", "false");
+}));
+
+toggle?.addEventListener("click", () => {
+  const open = header?.classList.toggle("menu-open") ?? false;
+  toggle.setAttribute("aria-expanded", String(open));
+  toggle.setAttribute("aria-label", common[language][open ? "menuClose" : "menuOpen"]);
+});
+
+nav?.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => {
+  header?.classList.remove("menu-open");
+  toggle?.setAttribute("aria-expanded", "false");
+}));
+
+applyLanguage(language, Boolean(requested));

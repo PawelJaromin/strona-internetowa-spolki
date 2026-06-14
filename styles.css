@@ -493,6 +493,28 @@ main > .section:not(.intro):not(.split):not(.contact) {
   color: var(--dark);
 }
 
+
+.case-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 22px;
+  color: var(--accent-strong);
+  font-weight: 900;
+}
+
+.case-link::after {
+  content: "→";
+  transition: transform 160ms ease;
+}
+
+.case-link:hover::after {
+  transform: translateX(4px);
+}
+
+#realizacje[data-show-project-links="false"] [data-project-link] {
+  display: none;
+}
 .split {
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
