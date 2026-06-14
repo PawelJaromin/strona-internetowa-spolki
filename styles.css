@@ -84,10 +84,13 @@ a {
 
 .language-switcher {
   display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
   padding: 3px;
   border: 1px solid rgba(21, 18, 15, 0.18);
   border-radius: var(--radius);
   background: rgba(255, 250, 244, 0.72);
+  line-height: 1;
 }
 
 .language-switcher button {
@@ -156,12 +159,14 @@ a {
 
 .site-nav {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  align-items: center;
   justify-content: flex-end;
   gap: 10px;
   color: #4d4741;
   font-size: 1.2rem;
   font-weight: 850;
+  white-space: nowrap;
 }
 
 .site-nav a {
@@ -685,6 +690,30 @@ textarea:focus {
   }
 }
 
+@media (min-width: 1121px) and (max-width: 1450px) {
+  .site-header {
+    gap: 16px;
+    padding-inline: clamp(24px, 3vw, 44px);
+  }
+
+  .brand-logo {
+    width: clamp(250px, 22vw, 310px);
+  }
+
+  .site-nav {
+    gap: 2px;
+    font-size: 1.05rem;
+  }
+
+  .site-nav a {
+    padding: 11px 9px;
+  }
+
+  .language-switcher button {
+    min-width: 34px;
+    padding-inline: 6px;
+  }
+}
 @media (max-width: 1120px) {
   html {
     scroll-padding-top: 104px;
